@@ -1,0 +1,66 @@
+para inciar el proyecto escribimos 
+php artisan serve
+
+y para la base de datos escribimos 
+php artisan migrate 
+
+para eliminar las tablas creadas con el comando anterior
+debemos escribir lo siguiente 
+php artisan migrate:rollback
+
+comandos para crear un proyecto en laravel 
+accedemos a desktop cd .\Desktop\
+despues creamos el proyecto con composer asi:
+composer create-project laravel/laravel {nombreProyecto}
+FIN
+
+//explorando cada carpeta importantes
+APP/CONTROLADORES
+donde se colocan los controladores 
+APP/MODELS
+donde se agrgan los modelos
+
+//explorando database 
+trabajaremos mucho en la database por que se pueden crear migraciones 
+y se almacenan en database/migatrions ademas que hay factories y seeders
+
+//carpeta langh (no creado)
+se puede descargar los diferentes paquetes de lenguajes de laravel para que se 
+traduscan a los elementos de mi aplicacion
+
+//explorando public
+carpeta que presenta la parte visual de la aplicacion es decir lo que 
+puede ver el usuario, hojas de estili, javascript, demas
+
+//explorando resources 
+carpeta donde se guardan los archivos originales de css y de js que se compilan con el archivo 
+externo webpack.mix.js, ademas que tenemos la carpeta de views OJO 
+
+//explorando routes
+los archivos mas comunes aqui son api y web, pero el mas comun es el de web, por que 
+nos permite enlazar nuestra paginas ya que escanea la carpeta views de resources 
+y muestra el nombre de la pagina que este por parametro 
+
+//explorando storage 
+si permitimos que los usuario tengan la capacidad de subir imagenes en nuestro sitio web, debemos 
+habilitar esta carpeta OJO esta carpeta debe ser externa para que sea mas barato y el sitio cargue mas 
+rapido y por seguridad y privacidad
+
+//explorando vendor 
+carpeta donde se almacenan todas las dependencias de composer 
+
+//archivo env 
+donde tenemos variables de entorno, laravel te da por defecto una conexcion con Mysql 
+
+video primeros pasos de devstagram
+
+//Eloquente (ORM) de laravel 
+que es un orm
+Object Relation Mapper hace que interctuar con la base de datos sea mas sencillo
+en Eloquente cada tabla tiene su propio modelo, en ese modelo interctua unicamente con esa tabla
+y tiene funciones necesarias para hacer el crud
+//comando para hacer un modelo de una tabla php artisan make:model Cliente
+
+//Convenciones en modelo
+Eloquente siempre espera que las tablas sea nimbradas en plura OJO si tenemos una tabla de proveedores 
+eloquente espera proveedors NO proveedores
