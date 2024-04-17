@@ -13,7 +13,7 @@ uploadMultiple: false,
 
 init: function() {
     if(document.querySelector('[name="imagen"]').value.trim()){
-        const imagenPublicada = {}
+        const imagenPublicada = {};
         imagenPublicada.size = 1234;
         imagenPublicada.name = document.querySelector('[name="imagen"]').value;
 

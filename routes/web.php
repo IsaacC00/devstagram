@@ -47,6 +47,7 @@ Route::post('/editar-perfil',[PerfilController::class,'store'])->name('perfil.st
 // ROUTE MODEL BINDING
 Route::get('/{user:username}',[PostController::class,'index'])->name('post.index');
 
+//mostrat el view para crrear un post 
 Route::get('/posts/create',[PostController::class,'create'])->name('posts.create');
 
 //end point para validar y guardar los post  

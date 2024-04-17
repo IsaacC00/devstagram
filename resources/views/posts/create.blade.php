@@ -75,9 +75,11 @@
                 @error('imagen')
                 <p class="bg-red-500 text-white my-2 
                 rounded-lg text-sm p-2 text-center">{{$message}}</p>
-            @enderror
+                @enderror
             </form>
         </div>    
 </div>
 
     @endsection
+
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil numquam dolorum harum recusandae cum maiores sunt qui soluta aspernatur tempora unde tempore aliquid quasi possimus, ipsam impedit! Expedita, magnam error.
